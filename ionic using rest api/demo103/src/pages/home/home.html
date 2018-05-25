@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Demo 103
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item   *ngFor="let user of users" >
+      <h2>{{ user.name }}</h2>
+      <p>{{ user.date_created }}</p>
+      <!-- <h2>{{ user.name.first | uppercase }}</h2>
+      <p>{{ user.email }}</p>-->
+    </ion-item>
+  </ion-list>
+</ion-content>
